@@ -1,0 +1,119 @@
+area,population,iso,country,capital,continent,tld,currency_code,currency_name,phone,postal_code_format,postal_code_regex,languages,neighbours
+"390,580 square kilometres"
+"390,580 square kilometres","11,651,858"
+"390,580 square kilometres","11,651,858",ZW
+"390,580 square kilometres","11,651,858",ZW,Zimbabwe
+"390,580 square kilometres","11,651,858",ZW,Zimbabwe,Harare
+"390,580 square kilometres","11,651,858",ZW,Zimbabwe,Harare,AF
+"390,580 square kilometres","11,651,858",ZW,Zimbabwe,Harare,AF,.zw
+"390,580 square kilometres","11,651,858",ZW,Zimbabwe,Harare,AF,.zw,ZWL
+"390,580 square kilometres","11,651,858",ZW,Zimbabwe,Harare,AF,.zw,ZWL,Dollar
+"390,580 square kilometres","11,651,858",ZW,Zimbabwe,Harare,AF,.zw,ZWL,Dollar,263
+"390,580 square kilometres","11,651,858",ZW,Zimbabwe,Harare,AF,.zw,ZWL,Dollar,263,
+"390,580 square kilometres","11,651,858",ZW,Zimbabwe,Harare,AF,.zw,ZWL,Dollar,263,,
+"390,580 square kilometres","11,651,858",ZW,Zimbabwe,Harare,AF,.zw,ZWL,Dollar,263,,,"en-ZW,sn,nr,nd"
+"390,580 square kilometres","11,651,858",ZW,Zimbabwe,Harare,AF,.zw,ZWL,Dollar,263,,,"en-ZW,sn,nr,nd",ZA MZ BW ZM 
+"752,614 square kilometres"
+"752,614 square kilometres","13,460,305"
+"752,614 square kilometres","13,460,305",ZM
+"752,614 square kilometres","13,460,305",ZM,Zambia
+"752,614 square kilometres","13,460,305",ZM,Zambia,Lusaka
+"752,614 square kilometres","13,460,305",ZM,Zambia,Lusaka,AF
+"752,614 square kilometres","13,460,305",ZM,Zambia,Lusaka,AF,.zm
+"752,614 square kilometres","13,460,305",ZM,Zambia,Lusaka,AF,.zm,ZMW
+"752,614 square kilometres","13,460,305",ZM,Zambia,Lusaka,AF,.zm,ZMW,Kwacha
+"752,614 square kilometres","13,460,305",ZM,Zambia,Lusaka,AF,.zm,ZMW,Kwacha,260
+"752,614 square kilometres","13,460,305",ZM,Zambia,Lusaka,AF,.zm,ZMW,Kwacha,260,#####
+"752,614 square kilometres","13,460,305",ZM,Zambia,Lusaka,AF,.zm,ZMW,Kwacha,260,#####,^(\d{5})$
+"752,614 square kilometres","13,460,305",ZM,Zambia,Lusaka,AF,.zm,ZMW,Kwacha,260,#####,^(\d{5})$,"en-ZM,bem,loz,lun,lue,ny,toi"
+"752,614 square kilometres","13,460,305",ZM,Zambia,Lusaka,AF,.zm,ZMW,Kwacha,260,#####,^(\d{5})$,"en-ZM,bem,loz,lun,lue,ny,toi",ZW TZ MZ CD NA MW AO 
+"527,970 square kilometres"
+"527,970 square kilometres","23,495,361"
+"527,970 square kilometres","23,495,361",YE
+"527,970 square kilometres","23,495,361",YE,Yemen
+"527,970 square kilometres","23,495,361",YE,Yemen,Sanaa
+"527,970 square kilometres","23,495,361",YE,Yemen,Sanaa,AS
+"527,970 square kilometres","23,495,361",YE,Yemen,Sanaa,AS,.ye
+"527,970 square kilometres","23,495,361",YE,Yemen,Sanaa,AS,.ye,YER
+"527,970 square kilometres","23,495,361",YE,Yemen,Sanaa,AS,.ye,YER,Rial
+"527,970 square kilometres","23,495,361",YE,Yemen,Sanaa,AS,.ye,YER,Rial,967
+"527,970 square kilometres","23,495,361",YE,Yemen,Sanaa,AS,.ye,YER,Rial,967,
+"527,970 square kilometres","23,495,361",YE,Yemen,Sanaa,AS,.ye,YER,Rial,967,,
+"527,970 square kilometres","23,495,361",YE,Yemen,Sanaa,AS,.ye,YER,Rial,967,,,ar-YE
+"527,970 square kilometres","23,495,361",YE,Yemen,Sanaa,AS,.ye,YER,Rial,967,,,ar-YE,SA OM 
+"266,000 square kilometres"
+"266,000 square kilometres","273,008"
+"266,000 square kilometres","273,008",EH
+"266,000 square kilometres","273,008",EH,Western Sahara
+"266,000 square kilometres","273,008",EH,Western Sahara,El-Aaiun
+"266,000 square kilometres","273,008",EH,Western Sahara,El-Aaiun,AF
+"266,000 square kilometres","273,008",EH,Western Sahara,El-Aaiun,AF,.eh
+"266,000 square kilometres","273,008",EH,Western Sahara,El-Aaiun,AF,.eh,MAD
+"266,000 square kilometres","273,008",EH,Western Sahara,El-Aaiun,AF,.eh,MAD,Dirham
+"266,000 square kilometres","273,008",EH,Western Sahara,El-Aaiun,AF,.eh,MAD,Dirham,212
+"266,000 square kilometres","273,008",EH,Western Sahara,El-Aaiun,AF,.eh,MAD,Dirham,212,
+"266,000 square kilometres","273,008",EH,Western Sahara,El-Aaiun,AF,.eh,MAD,Dirham,212,,
+"266,000 square kilometres","273,008",EH,Western Sahara,El-Aaiun,AF,.eh,MAD,Dirham,212,,,"ar,mey"
+"266,000 square kilometres","273,008",EH,Western Sahara,El-Aaiun,AF,.eh,MAD,Dirham,212,,,"ar,mey",DZ MR MA 
+274 square kilometres
+274 square kilometres,"16,025"
+274 square kilometres,"16,025",WF
+274 square kilometres,"16,025",WF,Wallis and Futuna
+274 square kilometres,"16,025",WF,Wallis and Futuna,Mata Utu
+274 square kilometres,"16,025",WF,Wallis and Futuna,Mata Utu,OC
+274 square kilometres,"16,025",WF,Wallis and Futuna,Mata Utu,OC,.wf
+274 square kilometres,"16,025",WF,Wallis and Futuna,Mata Utu,OC,.wf,XPF
+274 square kilometres,"16,025",WF,Wallis and Futuna,Mata Utu,OC,.wf,XPF,Franc
+274 square kilometres,"16,025",WF,Wallis and Futuna,Mata Utu,OC,.wf,XPF,Franc,681
+274 square kilometres,"16,025",WF,Wallis and Futuna,Mata Utu,OC,.wf,XPF,Franc,681,#####
+274 square kilometres,"16,025",WF,Wallis and Futuna,Mata Utu,OC,.wf,XPF,Franc,681,#####,^(986\d{2})$
+274 square kilometres,"16,025",WF,Wallis and Futuna,Mata Utu,OC,.wf,XPF,Franc,681,#####,^(986\d{2})$,"wls,fud,fr-WF"
+274 square kilometres,"16,025",WF,Wallis and Futuna,Mata Utu,OC,.wf,XPF,Franc,681,#####,^(986\d{2})$,"wls,fud,fr-WF", 
+"329,560 square kilometres"
+"329,560 square kilometres","89,571,130"
+"329,560 square kilometres","89,571,130",VN
+"329,560 square kilometres","89,571,130",VN,Vietnam
+"329,560 square kilometres","89,571,130",VN,Vietnam,Hanoi
+"329,560 square kilometres","89,571,130",VN,Vietnam,Hanoi,AS
+"329,560 square kilometres","89,571,130",VN,Vietnam,Hanoi,AS,.vn
+"329,560 square kilometres","89,571,130",VN,Vietnam,Hanoi,AS,.vn,VND
+"329,560 square kilometres","89,571,130",VN,Vietnam,Hanoi,AS,.vn,VND,Dong
+"329,560 square kilometres","89,571,130",VN,Vietnam,Hanoi,AS,.vn,VND,Dong,84
+"329,560 square kilometres","89,571,130",VN,Vietnam,Hanoi,AS,.vn,VND,Dong,84,######
+"329,560 square kilometres","89,571,130",VN,Vietnam,Hanoi,AS,.vn,VND,Dong,84,######,^(\d{6})$
+"329,560 square kilometres","89,571,130",VN,Vietnam,Hanoi,AS,.vn,VND,Dong,84,######,^(\d{6})$,"vi,en,fr,zh,km"
+"329,560 square kilometres","89,571,130",VN,Vietnam,Hanoi,AS,.vn,VND,Dong,84,######,^(\d{6})$,"vi,en,fr,zh,km",CN LA KH 
+"912,050 square kilometres"
+"912,050 square kilometres","27,223,228"
+"912,050 square kilometres","27,223,228",VE
+"912,050 square kilometres","27,223,228",VE,Venezuela
+"912,050 square kilometres","27,223,228",VE,Venezuela,Caracas
+"912,050 square kilometres","27,223,228",VE,Venezuela,Caracas,SA
+"912,050 square kilometres","27,223,228",VE,Venezuela,Caracas,SA,.ve
+"912,050 square kilometres","27,223,228",VE,Venezuela,Caracas,SA,.ve,VEF
+"912,050 square kilometres","27,223,228",VE,Venezuela,Caracas,SA,.ve,VEF,Bolivar
+"912,050 square kilometres","27,223,228",VE,Venezuela,Caracas,SA,.ve,VEF,Bolivar,58
+"912,050 square kilometres","27,223,228",VE,Venezuela,Caracas,SA,.ve,VEF,Bolivar,58,####
+"912,050 square kilometres","27,223,228",VE,Venezuela,Caracas,SA,.ve,VEF,Bolivar,58,####,^(\d{4})$
+"912,050 square kilometres","27,223,228",VE,Venezuela,Caracas,SA,.ve,VEF,Bolivar,58,####,^(\d{4})$,es-VE
+"912,050 square kilometres","27,223,228",VE,Venezuela,Caracas,SA,.ve,VEF,Bolivar,58,####,^(\d{4})$,es-VE,GY BR CO 
+0 square kilometres
+0 square kilometres,921
+0 square kilometres,921,VA
+0 square kilometres,921,VA,Vatican
+0 square kilometres,921,VA,Vatican,Vatican City
+0 square kilometres,921,VA,Vatican,Vatican City,EU
+0 square kilometres,921,VA,Vatican,Vatican City,EU,.va
+0 square kilometres,921,VA,Vatican,Vatican City,EU,.va,EUR
+0 square kilometres,921,VA,Vatican,Vatican City,EU,.va,EUR,Euro
+0 square kilometres,921,VA,Vatican,Vatican City,EU,.va,EUR,Euro,379
+0 square kilometres,921,VA,Vatican,Vatican City,EU,.va,EUR,Euro,379,#####
+0 square kilometres,921,VA,Vatican,Vatican City,EU,.va,EUR,Euro,379,#####,^(\d{5})$
+0 square kilometres,921,VA,Vatican,Vatican City,EU,.va,EUR,Euro,379,#####,^(\d{5})$,"la,it,fr"
+0 square kilometres,921,VA,Vatican,Vatican City,EU,.va,EUR,Euro,379,#####,^(\d{5})$,"la,it,fr",IT 
+"12,200 square kilometres"
+"12,200 square kilometres","221,552"
+"12,200 square kilometres","221,552",VU
+"12,200 square kilometres","221,552",VU,Vanuatu
+"12,200 square kilometres","221,552",VU,Vanuatu,Port Vila
+"12,200 square kilometres","221,552",VU,Vanuatu,Port Vila,O
