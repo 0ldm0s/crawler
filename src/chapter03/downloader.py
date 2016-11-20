@@ -85,7 +85,7 @@ class Throttle:
         domain = urlparse.urlsplit(url).netloc
         last_accessed = self.domains.get(domain)
         if self.delay > 0 and last_accessed is not None:
-            sleep_ses = self.delay - (time.time() - last_accessed).seconds()
+            sleep_ses = self.delay - (datetime.now() - last_accessed).seconds
             if sleep_ses > 0:
                 time.sleep(sleep_ses)
         self.domains[domain] = datetime.now()
