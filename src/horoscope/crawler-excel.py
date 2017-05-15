@@ -7,6 +7,8 @@ from datetime import datetime, date, timedelta
 import calendar
 from dateutil.relativedelta import relativedelta
 import logging
+import xlwt
+import unicodedata
 
 logging.basicConfig(
         filename='horoscope-crawler.log',
@@ -18,50 +20,42 @@ logging.basicConfig(
 parent_dir = 'horoscope'
 horoscopes = ['Aquarius', 'Aries', 'Cancer', 'Capricorn', 'Gemini', 'Leo',
               'Libra', 'Pisces', 'Sagittarius', 'Scorpio', 'Taurus', 'Virgo']
+titles = ['日期', '星座', 'Summary', 'Love', 'Financial', 'Health']
+filters = ['Love', 'Financial', 'Health']
 
 failds = []  # 失败记录
 
 
-# 根据星座抓取，mouths表示抓取几个月前的数据
-def crawler_by_horoscope(mouths):
-
-    p_dir = os.path.abspath(os.getcwd()) + '\\' + parent_dir
-    for hor in horoscopes:
-        hor = hor.lower()
-        os.chdir(p_dir)
-        h_mkdir(hor)
-        os.chdir(hor)
-
-        days = get_date_str(mouths)
-        for day in days:
-            data = hor + '-horoscope-' + day.lower()
-            crawler(data)
-
-
 # 根据日期抓取，mouths表示抓取几个月前的数据
 def crawler_by_date(mouths):
-    p_dir = os.path.abspath(os.getcwd()) + '\\' + parent_dir
+    excel_data = xlwt.Workbook()
+    table = excel_data.add_sheet('horoscope', cell_overwrite_ok=True)
+    global table
+    global excel_data
+    for ti in titles:
+        table.write(0, titles.index(ti), ti)
+
     days = get_date_str(mouths)
+    row = 0
     for day in days:
-        os.chdir(p_dir)
-        h_mkdir(day)
-        os.chdir(day)
 
         for hor in horoscopes:
-            hor = hor.lower()
-            data = hor + '-horoscope-' + day.lower()
-            crawler(data)
+
+            row += 1
+            crawler(hor, day.lower(), row)
+    excel_data.save('horoscope.xls')
 
 
 # 根据链接后缀抓取星座数据
-def crawler(data):
+def crawler(hor, c_date, row):
+    data = hor.lower() + '-horoscope-' + c_date
     url = 'https://www.horoscope-day.com/' + data + '/'
     user_agent = 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'
     headers = {'User-Agent': user_agent}
 
     try:
         request = urllib.request.Request(url, headers=headers)
-        logging.info('downing: %s' % url)
+        print('downing: %s' % url)
         response = urllib.request.urlopen(request)
         # print(response.read())
 
@@ -72,7 +66,11 @@ def crawler(data):
         # print("title:", title.string)
 
         body = soup.find(name="div", attrs={"class": "entry-summary"})
+        column = 2
+        table.write(row, 0, c_date)
+        table.write(row, 1, hor)
         for child in body.children:
+
             try:
                 if child.script['async'] is None and child['script'] is None:
                     break
@@ -82,23 +80,20 @@ def crawler(data):
             strs = child.string
             if strs is None:
                 strs = child.text
-
-            if strs is not None and strs != '\n' and strs.strip() != '(adsbygoogle = window.adsbygoogle || []).push({});':
-                # print(strs)
-                with open(data + '.txt', 'a') as f:
-                    f.writelines('\n' + strs)
-                    f.close()
+            hor_summary = 'Daily ' + hor + ' horoscope summary'
+            filter1 = strs != 'Love' and strs != 'Financial' and strs != 'Health' and strs != hor_summary and strs != ''
+            filter2 = strs is not None and strs != '\n' and strs.strip() != '(adsbygoogle = window.adsbygoogle || []).push({});'
+            if filter1 and filter2:
+                table.write(row, column, strs)
+                column += 1
 
     except urllib.request.URLError as e:
-        faild = 'failed download: %s code %s reason %s', data
+        faild = 'failed download: ', data
         if hasattr(e, "code"):
-            faild += 'code %s', e.code
+            faild += 'code: ', e.code
         if hasattr(e, "reason"):
-            faild += 'reason %s', e.reason
+            faild += 'reason: ', e.reason
         failds.append(faild)
-
-    for fa in failds:
-        logging.error(fa)
 
 
 # 获取输入日期所在月份起始日期
@@ -140,6 +135,8 @@ if __name__ == '__main__':
     h_mkdir(parent_dir)
     # crawler_by_horoscope(1)
     crawler_by_date(1)
+    for fa in failds:
+        logging.error(fa)
 
 
 
