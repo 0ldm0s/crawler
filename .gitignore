@@ -1,8 +1,2 @@
-/.idea/*
-/gradle/*
-/firebase-upload.iml
-/.gitignore
-/build/
-/.gradle/
-/out/
 /.idea/
+!/.idea/
