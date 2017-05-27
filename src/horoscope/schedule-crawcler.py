@@ -83,6 +83,7 @@ def time_dis():
     target_time += _day
 
     now_time = datetime.utcnow().replace(tzinfo=timezone.utc).astimezone(_timezone)
+
     return target_time.timestamp() - now_time.timestamp()
 
 
