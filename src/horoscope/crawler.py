@@ -134,13 +134,9 @@ def h_mkdir(path):
     try:
         os.mkdir(path)
     except Exception as e:
-        None
+        pass
 
 if __name__ == '__main__':
     h_mkdir(parent_dir)
     # crawler_by_horoscope(1)
     crawler_by_date(1)
-
-
-
-
