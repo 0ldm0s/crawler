@@ -37,7 +37,7 @@ def get_today():
     :return: 
     """
     _timezone = timezone(timedelta(hours=-7))
-    return datetime.now().astimezone(_timezone).strftime('%Y-%m-%d')
+    return datetime.utcnow().replace(tzinfo=timezone.utc).astimezone(_timezone).strftime('%Y-%m-%d')
 
 
 def crawler_today_date():
@@ -225,6 +225,7 @@ def h_mkdir(path):
         pass
 
 if __name__ == '__main__':
+    get_today()
     h_mkdir(parent_dir)
     # crawler_by_horoscope(1)
     crawler_today_date()
