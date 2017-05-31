@@ -4,7 +4,7 @@ import logging
 import os
 import random
 import urllib.request
-from datetime import date
+from datetime import date, datetime, timezone, timedelta
 
 from bs4 import BeautifulSoup
 
@@ -32,7 +32,12 @@ upload_data = {}
 
 
 def get_today():
-    return date.today().strftime('%Y-%m-%d')
+    """
+    获取西七区当天时间
+    :return: 
+    """
+    _timezone = timezone(timedelta(hours=-7))
+    return datetime.now().astimezone(_timezone).strftime('%Y-%m-%d')
 
 
 def crawler_today_date():

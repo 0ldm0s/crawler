@@ -5,7 +5,7 @@ import sched
 import time
 from datetime import datetime, timedelta, timezone
 
-import jpype
+# import jpype
 
 import crawler_today_data
 
@@ -33,26 +33,26 @@ def func():
     # run_jar(jar_path)
 
 
-def run_jar(jar_path):
-    """
-    运行jar文件
-    :param jar_path: jar包位置
-    :return: 
-    """
-
-    # 开启JVM，且指定jar包位置
-    jpype.startJVM(jpype.getDefaultJVMPath(), "-Djava.ext.dirs=%s" % jar_path)
-
-    # 引入java程序中的类.路径应该是项目中的package包路径.类名
-    javaClass = jpype.JClass('HoroscopeDataUpload')
-
-    # 创建一个对象
-    javaInstance = javaClass()
-
-    # 这一步就是具体执行类中的函数了
-    javaInstance.uploadData()
-
-    jpype.shutdownJVM()
+# def run_jar(jar_path):
+#     """
+#     运行jar文件
+#     :param jar_path: jar包位置
+#     :return:
+#     """
+#
+#     # 开启JVM，且指定jar包位置
+#     jpype.startJVM(jpype.getDefaultJVMPath(), "-Djava.ext.dirs=%s" % jar_path)
+#
+#     # 引入java程序中的类.路径应该是项目中的package包路径.类名
+#     javaClass = jpype.JClass('HoroscopeDataUpload')
+#
+#     # 创建一个对象
+#     javaInstance = javaClass()
+#
+#     # 这一步就是具体执行类中的函数了
+#     javaInstance.uploadData()
+#
+#     jpype.shutdownJVM()
 
 
 def perform1(inc):
